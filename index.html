@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            counterbyadam
+        </title>
+        <link rel="stylesheet" href="app.css"/>
+    </head>
+    <body>
+        <div>
+            <h1>
+                COUNTER
+            </h1>
+            <button type="button" onClick="increment()">Increment</button>
+            <button type="button" onClick="decrement()">Decrement</button>
+            <p>
+                Clicks: <span id="butthole">0</span>
+            </p>
+            <script type="text/javascript">
+                let clicks = 0;
+                function increment() {
+                    clicks += 1;
+                     document.getElementById("butthole").innerHTML = clicks;
+                     console.log(clicks);
+                };
+                function decrement() {
+                    if (clicks === 0) {
+                        alert("Stay Positive :)");
+                    }
+                    else {
+                        clicks -=1;
+                        document.getElementById("butthole").innerHTML = clicks;
+                    }
+                }
+            </script>
+        </div>
+
+    </body>
+</html>
